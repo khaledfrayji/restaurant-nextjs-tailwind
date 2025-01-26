@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link"
 import React, { useState, useEffect } from "react"
 
 const Hero = () => {
@@ -51,9 +52,11 @@ const Hero = () => {
         <h3 className="text-lg md:text-2xl text-white max-w-xl mb-8 text-left">
           Where every dish tells a story. Indulge in flavors crafted with passion, served with elegance.
         </h3>
+        <Link href={"/menu"}>
         <button className="uppercase text-sm md:text-base border border-white bg-orange-600 text-white py-2 px-6 rounded hover:bg-orange-500 transition">
           Make an order
         </button>
+        </Link>
       </div>
     </div>
   )
